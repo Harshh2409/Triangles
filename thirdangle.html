@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+        :root{
+      --primarycolor:#DC2626
+             }
+     body{
+         color: var(--primarycolor);
+         font-family: 'Patrick Hand';
+         text-align: center ;
+     }
+     #angle1{
+       font-size: x-large;
+       border-radius: 0.5rem;
+       border: solid var(--primarycolor);
+       margin-top: 2rem;
+     }
+     #label1{
+         font-size: xx-large;
+         margin: 1rem;
+     }
+     #label2{
+         font-size: xx-large;
+         margin: 1rem;
+     }
+     #angle2{
+        font-size: x-large;
+       border-radius: 0.5rem;
+       border: solid var(--primarycolor);
+       margin-top: 2rem;
+     }
+     #check-btn{
+         margin-top: 2rem;
+         font-size: x-large;
+       border-radius: 0.5rem;
+       border: solid var(--primarycolor);
+       background: transparent;
+       margin-left: 9.5rem;
+     }
+     #heading{
+         font-size: 3.5rem;
+         margin-bottom: 2rem;
+         
+         padding: 2rem;
+         margin: 0.6rem;
+         border-radius: 00.5rem;
+     }
+     #outputbox{
+         font-size: xx-large;
+         margin-top: 3rem;
+         margin-bottom: 2rem;
+         font-family: 'Sintony', cursive;
+     }
+     .footer{
+       padding: 0.6rem;
+       margin-top: 0.6rem;
+       font-size: 1.8rem;
+         
+         border-radius: 00.5rem;
+     }
+     </style>
+</head>
+<body>
+    <h2 id="heading">Enter the two angles you have</h2>
+    <hr>
+    
+    <label id="label1">Enter Angle 1:</label>
+    <input id="angle1" placeholder="in degrees">
+    <br>
+    <label id="label2">Enter Angle 2:</label>
+    <input id="angle2" placeholder="in degrees">
+    <br>
+    <button id="check-btn">check</button>
+    <p id=outputbox ></p>
+    <hr>
+    <footer class="footer">
+      
+      <h4>About</h4>
+      <div>Enter the two angles of the triangle you know and find out the third angle</div>
+    </footer>
+
+
+    <script>
+     
+     var a1=document.querySelector("#angle1");
+     var a2=document.querySelector("#angle2");
+     var checkbtn=document.querySelector("#check-btn");
+     var outputboxx=document.querySelector("#outputbox");
+     checkbtn.addEventListener("click",function(){
+       var angle3=180-Number(a1.value)-Number(a2.value);
+       outputboxx.innerText="the third angle will be "+angle3+" degrees";
+     });
+
+    </script>
+</body>
+</html>

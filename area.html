@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+        #heading{
+         font-size: 2.5rem;
+         margin-bottom: 2rem;
+     }
+     body{
+         text-align: center; color: var(--primarycolor);
+         font-family: 'Patrick Hand';
+         text-align: center ;
+     }
+     :root{
+      --primarycolor:#DC2626
+             }
+     #outputbox{
+         font-size: xx-large;
+         margin-top: 3rem;
+         
+         font-family: 'Sintony', cursive;
+     }
+     #side3{
+        font-size: x-large;
+       border-radius: 0.5rem;
+       border: solid var(--primarycolor);
+       margin-top: 2rem;
+       text-align: center;
+     }
+     #side2{
+        font-size: x-large;
+       border-radius: 0.5rem;
+       border: solid var(--primarycolor);
+       margin-top: 2rem;
+       text-align: center;
+     }
+     #side1{
+        font-size: x-large;
+       border-radius: 0.5rem;
+       border: solid var(--primarycolor);
+       margin-top: 2rem;
+       text-align: center;
+     }
+     #check-btn{
+         margin-top: 2rem;
+         font-size: x-large;
+       border-radius: 0.5rem;
+       border: solid var(--primarycolor);
+       background: transparent;
+       margin-left: 5.5rem;
+     }
+     #label{
+       font-size: 1.8rem;
+     }
+     .footer{
+       margin-top: 2rem;
+       font-size: 1.9rem;
+       padding-top: 1.5rem;
+     }
+    </style>
+</head>
+<body>
+    <h2 id="heading">Find out the Area of your Triangle </h2>
+    <hr>
+    <label id="label">Enter First Side : </label>
+    <input id="side1" placeholder="Enter side">
+    <br>
+    <label id="label" placeholder="enter side">Enter First Side : </label>
+    <input id="side2" placeholder="Enter side">
+    <br>
+    <label id="label" placeholder="enter side">Enter First Side : </label>
+    <input id="side3" placeholder="Enter side">
+    <br>
+    <button id="check-btn">check</button>
+    <br>
+    <p id="outputbox"></p>
+
+
+    <footer class="footer">
+      <hr>
+      <h4>About</h4>
+      <div>Enter all 3 sides of your traingle and find out the area enclosed by your Triangle</div>
+    </footer>
+    
+
+
+
+
+    <script>
+
+       var s1=document.querySelector("#side1");
+       var s2=document.querySelector("#side2");
+       var s3=document.querySelector("#side3");
+       var checkbtn=document.querySelector("#check-btn");
+       var outputboxx=document.querySelector("#outputbox");
+
+       checkbtn.addEventListener("click",function area(){
+        var s=(Number(s1.value)+Number(s2.value)+Number(s3.value))/2;
+        var a=Math.sqrt(s*(s-Number(s1.value))*(s-Number(s2.value))*(s-Number(s3.value)));
+         outputboxx.innerText="Area = "+a+" units";
+       });
+
+    </script>
+</body>
+</html>

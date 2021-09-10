@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Sintony&display=swap');
+
+body{
+    font-family: 'Sintony', sans-serif;
+    background-image: url("back.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+:root{
+    --primarycolor:
+    #DBEAFE;
+    --ow:#F3F4F6;
+    --dw:#6B7280;
+}
+#line{
+    margin-top: 3.5rem;
+}
+.heading
+{
+    text-align: center;
+    color: var(--primarycolor);
+    font-size: 2.4rem;
+}
+.isit
+{
+    text-align: center;
+    margin-left: 35.0rem;
+        border-radius: 0.5rem;
+    border: solid var(--primarycolor);
+    background: transparent;
+    font-size: xx-large;
+    margin-top: 3rem;
+    color: var(--primarycolor); cursor:pointer;
+}
+.area
+{
+    text-align: center;
+    margin-left: 31.5rem;
+        border-radius: 0.5rem;
+    border: solid var(--primarycolor);
+    background: transparent;
+    font-size: xx-large;
+    margin-top: 3rem;
+    color: var(--primarycolor);
+    cursor:pointer;
+    
+}
+.thirdangle
+{
+    text-align: center;
+    margin-left: 26rem;
+        border-radius: 0.5rem;
+    border: solid var(--primarycolor);
+    background: transparent;
+    font-size: xx-large; cursor:pointer;
+    
+    color: var(--primarycolor);
+    margin-top: 3rem;
+    
+}
+.quiz
+{
+    text-align: center; cursor:pointer;
+    margin-top: 3rem;
+    margin-left: 29.0rem;
+        border-radius: 0.5rem;
+    border: solid var(--primarycolor);
+    background: transparent;
+    font-size: xx-large;
+    
+    color: var(--primarycolor);
+}
