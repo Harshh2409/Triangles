@@ -27,13 +27,16 @@
      }
      #label2{
          font-size: xx-large;
-         margin: 1rem;
+         margin-left: 7.5rem;
+         
+         
      }
      #angle2{
         font-size: x-large;
        border-radius: 0.5rem;
        border: solid var(--primarycolor);
        margin-top: 2rem;
+       margin-left: 1rem;
      }
      #check-btn{
          margin-top: 2rem;
@@ -67,14 +70,14 @@
      </style>
 </head>
 <body>
-    <h2 id="heading">Enter the two angles you have</h2>
+    <h2 id="heading">Enter the Base and Perpendicular</h2>
     <hr>
     
-    <label id="label1">Enter Angle 1:</label>
-    <input id="angle1" placeholder="in degrees">
+    <label id="label1">Enter Perpendicular:</label>
+    <input id="angle1" placeholder="Perpendicular">
     <br>
-    <label id="label2">Enter Angle 2:</label>
-    <input id="angle2" placeholder="in degrees">
+    <label id="label2">Enter Base:</label>
+    <input id="angle2" placeholder="Base">
     <br>
     <button id="check-btn">check</button>
     <p id=outputbox ></p>
@@ -82,7 +85,7 @@
     <footer class="footer">
       
       <h4>About</h4>
-      <div>Enter the two angles of the triangle you know and find out the third angle</div>
+      <div>Enter the Base and Perpendicular and find what the hypotenuse of the right angles triangle is</div>
     </footer>
 
 
@@ -93,8 +96,8 @@
      var checkbtn=document.querySelector("#check-btn");
      var outputboxx=document.querySelector("#outputbox");
      checkbtn.addEventListener("click",function(){
-       var angle3=180-Number(a1.value)-Number(a2.value);
-       outputboxx.innerText="the third angle will be "+angle3+" degrees";
+       var angle3=Math.sqrt((Number(a1.value)*Number(a1.value))+(Number(a2.value)*Number(a2.value)));
+       outputboxx.innerText="the Hypotenuse will be "+angle3+" units";
      });
 
     </script>
