@@ -50,19 +50,17 @@
       <form class="quiz-form">
         <div class="question-container2">
           <p>
-           Ques 1) What is the third angle for the triangle where angle1 = 45° and
-            angle2 = 45°?
+           Ques 1) What type of triangle has 2 congruent sides ?
           </p>
-          <label><input type="radio" name="question1" value="45°" />45°</label>
-          <label><input type="radio" name="question1" value="90°" />90°</label>
-          <label><input type="radio" name="question1" value="60°" />60°</label>
+          <label><input type="radio" name="question1" value="isoceles" />Isoceles</label>
+          <label><input type="radio" name="question1" value="scalene" />Scalene</label>
+          <label><input type="radio" name="question1" value="equi" />Equilateral</label>
         </div>
         <br>
         <br>
         <div class="question-container">
           <p>
-           Ques 2) What is the third angle for the triangle where angle-1 = 65° and
-            angle-2 = 25°?
+           Ques 2) A triangle having all 3 angles greater then 90
           </p>
           <label>
             <input type="radio" name="question2" value="obtuse" />obtuse
@@ -134,29 +132,28 @@
         <br>
         <div class="question-container2">
           <p>
-            Ques 7)If the largest angle in a triangle is 70°, what is the least
-            possible value of the smallest angle of the triangle?
+            Ques 7)If a triangle hasone angle greater then 90 and no equal sides,what triangle is it
           </p>
           <label>
-            <input type="radio" name="question7" value="30°" />
-            30°
+            <input type="radio" name="question7" value="obtscal" />
+            Obtuse scalene
           </label>
           <label>
-            <input type="radio" name="question7" value="10°" />
-            10°
+            <input type="radio" name="question7" value="act" />
+            Acute isoceles
           </label>
         </div>
         <br>
         <br>
         <div class="question-container">
-          <p>Ques 8) The perimeter of scalene triangle with sides a, b, c is</p>
+          <p>Ques 8) All 3 interior angles of a triangle add up to</p>
           <label>
-            <input type="radio" name="question8" value="a + b + c" />
-            a + b + c
+            <input type="radio" name="question8" value="180" />
+            180
           </label>
           <label>
-            <input type="radio" name="question8" value="2a" />
-            2a
+            <input type="radio" name="question8" value="90" />
+            90
           </label>
           <label>
             <input type="radio" name="question8" value="None of these" />
@@ -166,13 +163,14 @@
         <br>
         <br>
         <div class="question-container2">
-          <p>Ques 9)A scalene triangle has ___ lines of symmetry</p>
+          <p>Ques 9)A ________ triangle is one where all 3 angles measure less than 90 degrees.
+</p>
           <label>
-            <input type="radio" name="question9" value="two" />two
+            <input type="radio" name="question9" value="acute" />acute
           </label>
           <label>
-            <input type="radio" name="question9" value="no" />
-            no
+            <input type="radio" name="question9" value="obt" />
+            obtuse
           </label>
           <label>
             <input type="radio" name="question9" value="15" />
@@ -213,15 +211,15 @@ const submitBtn = document.querySelector("#submit-answers-btn");
 const outputEl = document.querySelector(".output");
 
 const correctAnswers = [
-  "90°",
-  "right angled",
+  "isoceles",
+  "obtuse",
   "one right angle",
   "12, 16, 20",
   "Equilateral triangle",
   "100°",
-  "30°",
-  "a + b + c",
-  "no",
+  "obtscal",
+  "180",
+  "acute",
   "scalene",
 ];
 
